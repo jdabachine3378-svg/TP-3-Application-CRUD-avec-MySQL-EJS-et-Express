@@ -157,6 +157,9 @@ Ouvrez votre navigateur et accédez à :
 ```
 http://localhost:3000
 ```
+<img width="1755" height="840" alt="image" src="https://github.com/user-attachments/assets/6ae4b832-515c-4fcb-8917-d0d2c4e4d53b" />
+
+<img width="1916" height="915" alt="image" src="https://github.com/user-attachments/assets/ee9af04a-d1a3-4a8d-b485-5a3aeae8b3a0" />
 
 
 ##  Fonctionnalités
