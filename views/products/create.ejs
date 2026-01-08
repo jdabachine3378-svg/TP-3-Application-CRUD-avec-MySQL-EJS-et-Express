@@ -1,0 +1,36 @@
+<!-- Titre de la page -->
+<h1>Ajouter un produit</h1>
+
+<!-- Formulaire de création de produit -->
+<form action="/products/create" method="POST">
+    <!-- Champ pour le nom du produit -->
+    <div class="mb-3">
+        <label for="name" class="form-label">Nom du produit <span class="text-danger">*</span></label>
+        <input type="text" class="form-control" id="name" name="name" required 
+               placeholder="Entrez le nom du produit">
+    </div>
+    
+    <!-- Champ pour le prix du produit -->
+    <div class="mb-3">
+        <label for="price" class="form-label">Prix <span class="text-danger">*</span></label>
+        <input type="number" class="form-control" id="price" name="price" 
+               min="0" step="0.01" required placeholder="0.00">
+        <small class="form-text text-muted">Entrez le prix en euros (ex: 99.99)</small>
+    </div>
+    
+    <!-- Champ pour la description du produit -->
+    <div class="mb-3">
+        <label for="description" class="form-label">Description</label>
+        <textarea class="form-control" id="description" name="description" rows="4" 
+                  placeholder="Entrez une description du produit"></textarea>
+    </div>
+    
+    <!-- Boutons d'action -->
+    <div class="mb-3">
+        <!-- Bouton pour soumettre le formulaire -->
+        <button type="submit" class="btn btn-primary">Ajouter</button>
+        <!-- Bouton pour annuler et retourner à la liste -->
+        <a href="/products" class="btn btn-secondary">Annuler</a>
+    </div>
+</form>
+

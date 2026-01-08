@@ -1,0 +1,25 @@
+/**
+ * Feuille de style personnalisée pour l'application CRUD
+ * Complète les styles Bootstrap avec des ajustements spécifiques
+ */
+
+/* Espace en bas de la page pour éviter que le contenu ne soit caché par le footer */
+body {
+    padding-bottom: 20px;
+}
+
+/* Centre le contenu verticalement dans les cellules de tableau */
+.table th, .table td {
+    vertical-align: middle;
+}
+
+/* Espace entre les boutons d'action dans les tableaux */
+.btn-sm {
+    margin-right: 5px;
+}
+
+/* Permet aux formulaires de suppression d'être affichés sur la même ligne que les autres boutons */
+form.d-inline {
+    display: inline-block;
+}
+

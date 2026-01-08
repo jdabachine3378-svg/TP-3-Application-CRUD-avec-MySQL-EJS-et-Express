@@ -1,0 +1,36 @@
+<!-- Titre de la page -->
+<h1>Modifier le produit</h1>
+
+<!-- Formulaire de modification de produit -->
+<!-- L'URL d'action contient l'ID du produit à modifier -->
+<form action="/products/<%= product.id %>/update" method="POST">
+    <!-- Champ pour le nom du produit (pré-rempli avec la valeur actuelle) -->
+    <div class="mb-3">
+        <label for="name" class="form-label">Nom du produit <span class="text-danger">*</span></label>
+        <input type="text" class="form-control" id="name" name="name" 
+               value="<%= product.name %>" required>
+    </div>
+    
+    <!-- Champ pour le prix du produit (pré-rempli avec la valeur actuelle) -->
+    <div class="mb-3">
+        <label for="price" class="form-label">Prix <span class="text-danger">*</span></label>
+        <input type="number" class="form-control" id="price" name="price" 
+               value="<%= product.price %>" min="0" step="0.01" required>
+        <small class="form-text text-muted">Entrez le prix en euros (ex: 99.99)</small>
+    </div>
+    
+    <!-- Champ pour la description du produit (pré-rempli avec la valeur actuelle) -->
+    <div class="mb-3">
+        <label for="description" class="form-label">Description</label>
+        <textarea class="form-control" id="description" name="description" rows="4"><%= product.description || '' %></textarea>
+    </div>
+    
+    <!-- Boutons d'action -->
+    <div class="mb-3">
+        <!-- Bouton pour soumettre le formulaire de mise à jour -->
+        <button type="submit" class="btn btn-warning">Mettre à jour</button>
+        <!-- Bouton pour annuler et retourner à la liste -->
+        <a href="/products" class="btn btn-secondary">Annuler</a>
+    </div>
+</form>
+

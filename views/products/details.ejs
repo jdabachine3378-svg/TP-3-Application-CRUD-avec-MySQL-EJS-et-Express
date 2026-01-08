@@ -1,0 +1,37 @@
+<!-- Carte Bootstrap pour afficher les détails du produit -->
+<div class="card">
+    <!-- En-tête de la carte avec le nom du produit -->
+    <div class="card-header d-flex justify-content-between align-items-center">
+        <h1 class="mb-0"><%= product.name %></h1>
+        <!-- Bouton pour retourner à la liste -->
+        <a href="/products" class="btn btn-secondary">Retour à la liste</a>
+    </div>
+    
+    <!-- Corps de la carte avec les informations du produit -->
+    <div class="card-body">
+        <!-- Affichage de l'ID -->
+        <p><strong>ID:</strong> <%= product.id %></p>
+        
+        <!-- Affichage du prix formaté avec 2 décimales -->
+        <p><strong>Prix:</strong> <%= product.price.toFixed(2) %> €</p>
+        
+        <!-- Affichage de la description -->
+        <p><strong>Description:</strong></p>
+        <p><%= product.description || 'Aucune description disponible' %></p>
+        
+        <!-- Affichage de la date de création formatée -->
+        <p><strong>Date de création:</strong> <%= new Date(product.created_at).toLocaleString('fr-FR') %></p>
+    </div>
+    
+    <!-- Pied de la carte avec les boutons d'action -->
+    <div class="card-footer">
+        <!-- Bouton pour modifier le produit -->
+        <a href="/products/edit/<%= product.id %>" class="btn btn-warning">Modifier</a>
+        <!-- Formulaire de suppression avec confirmation -->
+        <form action="/products/<%= product.id %>/delete" method="POST" class="d-inline" 
+              onsubmit="return confirm('Êtes-vous sûr de vouloir supprimer ce produit ?');">
+            <button type="submit" class="btn btn-danger">Supprimer</button>
+        </form>
+    </div>
+</div>
+
