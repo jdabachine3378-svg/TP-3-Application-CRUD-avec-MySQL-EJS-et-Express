@@ -4,7 +4,7 @@
 
 Ce projet est une application web complète qui implémente toutes les opérations CRUD (Create, Read, Update, Delete) pour la gestion de produits. Elle utilise Express.js comme framework web, MySQL comme base de données et EJS comme moteur de templates.
 
-## 📋 Table des matières
+##  Table des matières
 
 - [Prérequis](#prérequis)
 - [Installation](#installation)
@@ -15,7 +15,7 @@ Ce projet est une application web complète qui implémente toutes les opératio
 - [Architecture](#architecture)
 - [Améliorations possibles](#améliorations-possibles)
 
-## 🔧 Prérequis
+##  Prérequis
 
 Avant de commencer, assurez-vous d'avoir installé :
 
@@ -23,7 +23,7 @@ Avant de commencer, assurez-vous d'avoir installé :
 - **MySQL** (version 5.7 ou supérieure) - [Télécharger MySQL](https://www.mysql.com/downloads/)
 - **npm** (généralement inclus avec Node.js)
 
-## 📦 Installation
+##  Installation
 
 ### 1. Cloner ou télécharger le projet
 
@@ -97,7 +97,7 @@ PORT=3000
 
 **Important** : Remplacez `votre_mot_de_passe` par votre mot de passe MySQL réel. Si vous n'avez pas de mot de passe, laissez le champ vide.
 
-## 📁 Structure du projet
+##  Structure du projet
 
 ```
 crud-express-mysql/
@@ -136,7 +136,7 @@ crud-express-mysql/
 └── README.md                # Ce fichier
 ```
 
-## 🚀 Utilisation
+##  Utilisation
 
 ### 1. Démarrer l'application
 
@@ -158,7 +158,7 @@ Ouvrez votre navigateur et accédez à :
 http://localhost:3000
 ```
 
-Vous serez automatiquement redirigé vers la liste des produits.
+<img width="921" height="874" alt="image" src="https://github.com/user-attachments/assets/e56710d9-459a-4bd5-8329-8329b7892c0b" />
 
 ## ✨ Fonctionnalités
 
@@ -199,13 +199,13 @@ Cette application suit l'architecture **MVC** (Model-View-Controller) :
 5. Le contrôleur rend la vue EJS appropriée avec les données
 6. La vue génère le HTML final qui est envoyé au navigateur
 
-## 🔒 Sécurité
+##  Sécurité
 
 - ✅ **Requêtes paramétrées** : Protection contre les injections SQL
 - ✅ **Variables d'environnement** : Informations sensibles stockées dans `.env`
 - ✅ **Validation HTML5** : Validation côté client des formulaires
 
-## 🎨 Technologies utilisées
+##  Technologies utilisées
 
 - **Backend** : Node.js, Express.js
 - **Base de données** : MySQL
@@ -242,7 +242,7 @@ npm install multer
 ### 6. API REST
 Créez une API REST parallèlement à l'interface utilisateur pour permettre l'accès aux données via des requêtes JSON.
 
-## 🐛 Dépannage
+##  Dépannage
 
 ### Erreur de connexion à la base de données
 
@@ -265,22 +265,20 @@ Si vous obtenez une erreur "Cannot find module", réinstallez les dépendances :
 npm install
 ```
 
-## 📚 Ressources
+##  Ressources
 
 - [Documentation Express.js](https://expressjs.com/)
 - [Documentation MySQL2](https://github.com/sidorares/node-mysql2)
 - [Documentation EJS](https://ejs.co/)
 - [Documentation Bootstrap](https://getbootstrap.com/)
 
-## 📄 Licence
 
-Ce projet est fourni à des fins éducatives.
 
-## 👨‍💻 Auteur
 
+##  Auteur
+DABACHINE JAMILA
 Projet réalisé dans le cadre d'un TP sur Express.js, MySQL et EJS.
 
 ---
 
-**Note** : N'oubliez pas de ne jamais commiter le fichier `.env` dans un dépôt Git public, car il contient des informations sensibles !
 
